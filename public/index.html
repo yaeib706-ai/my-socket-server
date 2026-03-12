@@ -10,6 +10,7 @@
         <script src="/script.js" defer></script>
     </head>
     <body>
+        <div id="counter-display">יש 0 לקוחות פעילים כרגע</div>
         <h1>Simple Chat</h1>
         <ul id="messages"></ul>
         <form id="form" action="#">
@@ -19,5 +20,13 @@
                 placeholder="Type your message..." />
             <button>Send</button>
         </form>
+        <form id="user-details-form" action="#">
+            <div id="user-details">
+                <input type="text" id="username" placeholder="הכנס שם משתמש">
+                <input type="color" id="usercolor" value="#000000">
+                <button id="save-details" type="submit">שמירה</button>
+            </div>
+        </form>
+        <button id="disconnect-btn" type="button">התנתקות</button>
     </body>
 </html>
